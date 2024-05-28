@@ -3,6 +3,7 @@ import Store from "../components/Store/store";
 import ErrorPage from "../components/ErrorPage/ErrorPage";
 import App from "../App";
 import CartPage from "../components/CartPage/CartPage";
+import { Detail } from "../components/Detail/Detail";
 
 
 export const routes = [
@@ -20,8 +21,17 @@ export const routes = [
         element: <Store />,
         errorElement: <ErrorPage/>,
         children: []
+    
       },
-      {path: "Cart",
+
+      {
+        path: "product/:productId",
+        element: <Detail/>,
+        errorElement: <ErrorPage/>, 
+      },
+
+      {
+        path: "Cart",
         element: <CartPage />,
         errorElement: <ErrorPage />,
       }
