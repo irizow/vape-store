@@ -1,15 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Galada&display=swap');
 
+@keyframes expand {
+    from {width: 0;}
+    to {width: 15vw}
+    
+}
+
+.title {
+    text-decoration: none;
+    color: white;
+    font-family: 'Galada';
+    position: absolute;
+    left: 47%;
+}
 
 .header {
-    width: 96vw;
-    padding: 0px 2vw;
+    width: 96%;
+    padding: 0% 2%;
     height: 15vh;
     background-color:black;
     color: white;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-size: 30px;
+    font-size: 2rem;
 }
 
 .header div {
@@ -18,10 +32,52 @@
 }
 
 svg {
-    width: 5vh; 
+    width: 5vh;
+    color: white; 
 }
 
 .logo {
     width: 12vh;
 }
+
+.input {
+    border-radius: 20px;
+    border: none;
+    animation: expand 500ms forwards;
+    transition: all 500ms;
+}
+
+.cartdiv {
+    position:relative;
+    padding: 1vh;
+}
+
+.cartitems {
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: flex;
+    font-weight: 700;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.6rem;
+    width: 2vh;
+    height: 2vh;
+    background-color: red;
+    border-radius: 100%;
+}
+
+@media screen and (max-width: 600px) {
+    .logo {
+        display: none;
+    }
+
+    .title {
+        position: absolute;
+        left: 36%;
+        font-size: 25px;
+    }
+}
+
+
 
