@@ -1,14 +1,16 @@
 import { useState } from 'react'
-import './App.css'
-import Header from './components/Header'
-import CategoryList from './components/CategoryList'
+import Advertising from './components/advertising/Advertising'
+import CategoryList from './components/CategoryList/CategoryList'
+import styles from './home.module.css'
+
+
 
 function Home() {
 
   return (
     <>
-      <Header />
-      <CategoryList />
+      <CategoryList/>
+      <Advertising/>
     </>
   )
 }

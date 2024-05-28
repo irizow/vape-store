@@ -1,0 +1,23 @@
+@keyframes fadeIn {
+    from {opacity: 0%;}
+    to {visibility: 80%;}
+    
+}
+
+.popupdiv {
+    display: flex;
+    align-items: center;
+    background-color: black;
+    color: white;
+    position: absolute;
+    bottom: 10vw;
+    right: 5vw;
+    padding: 1vw;
+    animation: fadeIn 1s ease-in-out;
+    gap: 1vw;
+    border-radius: 15px;
+}
+
+.popupdiv img {
+    width: 7vw;
+}
