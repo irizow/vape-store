@@ -11,9 +11,11 @@ export default function Advertising () {
 
     const Banner = ({link, img})=> {
         return (
+            <div className={styles.banner}>
             <Link to={link}>
-                <img className={styles.banner} src={img}></img>
+                <img src={img}></img>
             </Link>
+            </div>
         )
 
     }

@@ -49,3 +49,28 @@
   justify-content: center;
   color: BLACK;
 }
+
+@media screen and (max-width: 750px) {
+    .div {
+        margin-top: 2rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        place-content: center;
+        gap: 2rem;
+        width: 100%;
+        place-items: center;
+        padding: 0;
+    }
+
+    .box {
+        width: 30vw;
+    }
+
+    .boxmodal {
+        height: 2rem;
+        display: grid;
+        place-content: center;
+        text-align: center;
+    }
+    
+}

@@ -50,16 +50,20 @@ export default function Header() {
         {isCart && <CartPage isLoaded={true}/>}
         <div className={styles.header} >
             <div>
+                
                 <Link to="/">
                     <img className={styles.logo} src={vapeLogo}></img>
                 </Link>
+                
                 <div ref={dropRef} onClick={e=> handleDropClick(e)}>
                     <HamburgerIcon />
                 </div>
             </div>
+            {!isSearch &&
             <Link className={styles.title} to="/">
                 <p>Vape Store</p>
             </Link>
+            }
             <div>
                 <div className={styles.cartdiv} onClick={()=> setIsCart(!isCart)}>
                     {cart.length > 0 && <div className={styles.cartitems}>{totalItems}</div>}
